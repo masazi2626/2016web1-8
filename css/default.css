@@ -21,28 +21,35 @@ body
 #gnav a
 {
   display: block;
-  padding:10px 0;
   text-align: center;
   text-decoration: none;
-  background: darkgreen;
   color: white;
 }
-#gnav a:hover
+#gnav a:after
 {
-  background: lightgreen;
-  color: black;
+  clear: both;
 }
-#gnav a.selected
+#gnav div.img
 {
-  background: white;
-  color: darkgreen;
-  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  background: url(images.jpg) no-repeat;
+  width: 55px;
+  height: 46px;
 }
 
-#gnav ul
+#gnav div.text
 {
-  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+  padding:10px 5px;
 }
+div.img#home{    background-position: 0 0px;}
+div.img#content1{background-position: 0 0px;}
+div.img#content2{background-position: 0 0px;}
+div.img#help{    background-position: 0 0px;}
+div.img#faq{     background-position: 0 0px;}
+
 
 #gnav li
 {
